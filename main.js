@@ -3,16 +3,13 @@ const config = require("./auth.json");
 
 const aribot = new Discord.Client();
 
+const ariData = require('./ari-data.json');
+
 var currentTimestamp = "[" + convertTimestamp(Date.now()) + "]: ";
 var version = "2017.06.14a";
 
-var arianaSongs = ["Honeymoon Avenue", "Baby I", "Right There", "Tattooed Heart", "Lovin' It", "Piano", "Daydreamin'",
-"The Way", "You'll Never Know", "Almost Is Never Enough", "Popular Song", "Better Left Unsaid", "Intro", "Problem", "One Last Time",
-"Why Try", "Break Free", "Best Mistake", "Be My Baby", "Break Your Heart Right Back", "Love Me Harder", "Just A Little Bit Of Your Heart",
-"Hands On Me", "My Everything", "Moonlight", "Dangerous Woman", "Be Alright", "Into You", "Side To Side", "Let Me Love You", "Greedy",
-"Leave Me Lonely", "Everyday", "Sometimes", "I Don't Care", "Bad Decisions", "Touch It", "Knew Better / Forever Boy", "Thinkin' Bout You"];
-
-var arianaAlbums = ["Yours Truly", "My Everything", "Dangerous Woman"];
+var arianaSongs = ariData['songs'];
+var arianaAlbums = ariData['albums'];
 
 aribot.on("ready", () => {
     console.log(currentTimestamp + "Logged in as " + aribot.user.username + " with the ID - " + aribot.user.id + "\n" + currentTimestamp + "Ready!");
