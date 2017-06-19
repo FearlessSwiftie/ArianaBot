@@ -1,6 +1,6 @@
 {
   "name": "aribot",
-  "version": "1.0.0",
+  "version": "2017.06.19a",
   "description": "Discord utility bot for the Ariana Grande Discord server.",
   "main": "main.js",
   "dependencies": {

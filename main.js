@@ -6,7 +6,7 @@ const aribot = new Discord.Client();
 const ariData = require('./ari-data.json');
 
 var currentTimestamp = "[" + convertTimestamp(Date.now()) + "]: ";
-var version = "2017.06.14a";
+var version = "2017.06.19a";
 
 var arianaSongs = ariData['songs'];
 var arianaAlbums = ariData['albums'];
