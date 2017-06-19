@@ -1,0 +1,24 @@
+{
+  "name": "aribot",
+  "version": "1.0.0",
+  "description": "Discord utility bot for the Ariana Grande Discord server.",
+  "main": "main.js",
+  "dependencies": {
+    "discord.js": "^11.1.0",
+    "express": "^4.15.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "!ping"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://www.github.com/fearlessswiftie/arianabot.git"
+  },
+  "keywords": [
+    "ariana",
+    "grande"
+  ],
+  "author": "FearlessSwiftie",
+  "license": "MIT"
+}
